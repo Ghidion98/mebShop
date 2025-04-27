@@ -12,22 +12,18 @@ body {
 
 #scrollUp {
    width: 30px;
-   height: 35px;
+   height: 33px;
    border-top-left-radius: 50%;
    border-top-right-radius: 50%;
-   border: 2px solid #780d0d;
    border-bottom: 0;
-   background: #04875f;
    position: fixed;
    z-index: 11;
    bottom: 20px; 
    right: 20px;  
    cursor: pointer;
-   color: #fff;
-   text-align: center;
    font-weight: 700;
    padding-bottom: 7px;
-   font-size: 1.4em;
+   font-size: 1.8em;
 }
 #miniNav {
    width: 90px;
@@ -417,16 +413,26 @@ section h1 {
 #social-icons img:hover {
    transform: scale(1.2);
 }
+/*//// Media Queries for mobile devices ////*/
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
    body {
       background: #000;
-      font-size: 1.6em;
+      
    }
 
 #miniNav {
    visibility: visible;
 }
+.bar {
+   width: 35px;
+   height: 12px;
+   background: rgb(252, 251, 251);
+   border-radius: 4px;
+   padding-top: 10px;
+   margin-right: 4px;
+}
+
 
  header {
    visibility: visible;
@@ -452,19 +458,26 @@ section h1 {
 }
 
 #home h1 {
-   font-size: 1.6em;
+   font-size: 1.1em;
    padding-top: 15px;
    padding-left: 5px;
    text-align: center;
+   text-shadow: 2px 2px 2px #bcc0bd;
 }
 #home p {
-   font-size: 1.2em;
+   font-size: .9em;
    padding-left: 10px;
    color: #000;
 }
 #home a{
    padding-left: 1px;
    text-align: left;
+   font-size: .8em;
+   margin: 4px;
+}
+#home a:hover {
+   background: #00e;
+   color: #f00;
 }
 
 #home img {
@@ -483,8 +496,13 @@ section h1 {
    align-items: center;
    margin: 2px;
 }
+#about h1 {
+   font-size: 1.3em;
+   text-shadow: 2px 2px 2px #06c338;
+}
 #about p {
    background: none;
+   font-size: 1em;
 }
 #shop {
    width: 100%;
@@ -492,12 +510,13 @@ section h1 {
    
 }
 #shop h1 {
-   font-size: 1.5em;
+   font-size: 1.2em;
+   margin-bottom: 20px;
    color: #00e;
    text-align: center;
 }
 #shop p {
-   font-size: 1.2em;
+   font-size: .8em;
    color: #000;
 }
 #item {
@@ -515,7 +534,7 @@ section h1 {
    border-radius: 8px;
 }
 .price {
-   font-size: 1.1em;
+   font-size: .7em;
 }
 #contact {
    width: 100%;
@@ -550,7 +569,16 @@ section h1 {
    height: 100px;
    background: #666;
    padding-top: 25px;
-   font-size: .9em;
+   font-size: .7em;
+   
 }
-
+ #social-icons {
+   margin-top: 10px;
+   width: 25px;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   margin-left: 150px;
+   text-align: center;
+ }
 }
